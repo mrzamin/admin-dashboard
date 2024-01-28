@@ -32,6 +32,46 @@ body {
 
 .header {
   background-color: var(--header-color);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header-top {
+  border: 1px solid blue;
+  display: grid;
+  align-items: center;
+}
+
+.header-top div {
+  border: 1px solid grey;
+
+  display: grid;
+  grid-template-columns: 1fr 12fr 3fr 1fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+
+  border: 1px solid blue;
+}
+
+.search-bar {
+  width: 100%;
+  height: 40%;
+  border-radius: 15px;
+  background-color: var(--main-color);
+}
+
+.search {
+  justify-self: end;
+}
+
+.header-top div > * {
+  border: 1px solid blue;
+}
+
+.header-top img {
+  width: 25px;
 }
 
 .main {
