@@ -1,3 +1,10 @@
+:root {
+  --sidebar-color: #1992d4;
+  --main-color: #e2e8f0;
+  --header-color: #ffffff;
+  --accent-color: #facc15;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +18,15 @@ body {
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: var(--sidebar-color);
+
   grid-row: 1/-1;
 }
 
 .header {
-  background-color: white;
+  background-color: var(--header-color);
 }
 
 .main {
-  background-color: grey;
+  background-color: var(--main-color);
 }
