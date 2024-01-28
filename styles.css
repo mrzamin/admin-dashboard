@@ -45,6 +45,8 @@ body {
   border: 1px solid black;
 
   align-items: center;
+
+  margin-bottom: 40px;
 }
 
 .sidebar-header h3 {
@@ -61,7 +63,7 @@ body {
   filter: invert();
 }
 
-li {
+.sidebar li {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -71,7 +73,7 @@ li {
   border: 1px solid black;
 }
 
-li img {
+.sidebar li img {
   margin: 0;
   justify-self: end;
   align-self: center;
@@ -81,7 +83,7 @@ li img {
   filter: invert();
 }
 
-li h4 {
+.sidebar li h4 {
   margin: 0;
   align-self: center;
 }
@@ -90,4 +92,14 @@ li h4 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
+  border: 1px solid red;
+
+  margin-bottom: 40px;
+}
+
+.nav-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid blue;
 }
