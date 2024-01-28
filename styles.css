@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
   --sidebar-color: #1992d4;
   --main-color: #e2e8f0;
   --header-color: #ffffff;
   --accent-color: #facc15;
+
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -29,4 +34,25 @@ body {
 
 .main {
   background-color: var(--main-color);
+}
+
+.sidebar-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  border: 1px solid black;
+
+  color: white;
+}
+
+img {
+  justify-self: end;
+  align-self: center;
+  width: clamp(60px, 80%, 70px);
+
+  filter: invert();
+}
+
+h3 {
+  font-size: 1.2rem;
 }
