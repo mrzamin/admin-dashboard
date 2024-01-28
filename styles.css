@@ -47,7 +47,12 @@ body {
   align-items: center;
 }
 
+.sidebar-header h3 {
+  margin: 0;
+}
+
 .sidebar-header img {
+  margin: 0px;
   justify-self: end;
   width: clamp(50px, 40%, 60px);
 
