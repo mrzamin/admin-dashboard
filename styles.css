@@ -34,25 +34,16 @@ body {
   background-color: var(--header-color);
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 
 .header-top {
-  border: 1px solid blue;
-  display: grid;
-  align-items: center;
-}
-
-.header-top div {
-  border: 1px solid grey;
+  border: 3px solid green;
 
   display: grid;
   grid-template-columns: 1fr 12fr 3fr 1fr 1fr 3fr;
   grid-template-rows: 1fr;
   place-items: center;
-
-  border: 1px solid blue;
 }
 
 .search-bar {
@@ -72,6 +63,51 @@ body {
 
 .header-top img {
   width: 25px;
+}
+/* Header bottom */
+.header-bottom {
+  border: 2px solid orange;
+
+  display: grid;
+  place-items: center;
+
+  grid-template-columns: 1fr 6fr repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr;
+}
+
+.avatar-big {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 20px;
+}
+
+.greeting {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  margin: 0;
+}
+
+.name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  margin: 0;
+}
+
+.new {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+
+.upload {
+  grid-column: 4/5;
+  grid-row: 1/-1;
+}
+
+.share {
+  grid-column: 5/6;
+  grid-row: 1/-1;
 }
 
 .main {
