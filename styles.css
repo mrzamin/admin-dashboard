@@ -335,15 +335,10 @@ img[src*="variant"] {
 
   align-items: center;
 
-  margin-bottom: 40px;
-}
-
-.sidebar-header h3 {
-  margin: 0;
+  margin-bottom: 60px;
 }
 
 .sidebar-header img {
-  margin: 0px;
   justify-self: end;
   width: clamp(50px, 40%, 60px);
 
@@ -373,22 +368,24 @@ img[src*="variant"] {
 }
 
 .sidebar li h4 {
-  margin: 0;
   align-self: center;
 }
 
-.nav-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  border: 1px solid red;
-
-  margin-bottom: 40px;
-}
-
+.nav-1,
 .nav-2 {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+
+.nav-1 {
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid red;
+
+  margin-bottom: 60px;
+}
+
+.nav-2 {
   grid-template-rows: repeat(3, 1fr);
   border: 1px solid blue;
 }
