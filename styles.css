@@ -313,6 +313,10 @@ img[src*="variant"] {
   grid-row: 4/5;
 }
 
+.profiles p:nth-child(1) {
+  color: rgb(37, 37, 37);
+}
+
 /* Sidebar */
 
 .sidebar {
