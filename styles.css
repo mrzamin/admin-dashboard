@@ -45,11 +45,18 @@
   background-color: var(--main-color);
 }
 
-.search {
+.avatar-small {
+  width: 40px;
   justify-self: end;
 }
 
-.header-top img {
+.search {
+  justify-self: end;
+  margin-right: 5px;
+}
+
+.bell,
+.search {
   width: 25px;
 }
 
@@ -61,6 +68,8 @@
   grid-template-columns: 1fr 6fr repeat(3, 1fr);
   grid-template-rows: 1fr 2fr;
   column-gap: 5px;
+
+  padding-bottom: 8px;
 }
 
 button {
@@ -80,7 +89,7 @@ button {
 .avatar-big {
   grid-column: 1/2;
   grid-row: 1/-1;
-  width: 85px;
+  width: 75px;
 
   align-self: stretch;
   justify-self: end;
