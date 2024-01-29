@@ -243,6 +243,32 @@ button {
 .card-icons img {
   width: 25px;
 }
+
+img[src*="variant"] {
+  transform: rotate(90deg);
+}
+
+/*Announcements Card*/
+.announcements-card {
+  padding: 2rem;
+}
+
+.announcements-card > div {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 25px;
+}
+
+.announcements-card p {
+  font-size: 0.7rem;
+}
+
+.section-1,
+.section-2 {
+  border-bottom: 1px solid var(--main-color);
+}
 /* Sidebar */
 
 .sidebar {
