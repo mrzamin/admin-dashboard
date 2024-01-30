@@ -20,6 +20,7 @@
 
 .wrapper {
   height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template: 1fr 4fr / 1fr 5fr;
 }
@@ -109,7 +110,7 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 25px;
-  width: 75%;
+  width: max(75%, 65px);
   padding: 10px;
   justify-self: start;
 }
@@ -325,14 +326,14 @@ img[src*="variant"] {
   margin-left: 6px;
 }
 
-.sidebar li {
+li {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-size: 0.8rem;
 }
 
-.sidebar li img {
+li img {
   justify-self: end;
   align-self: center;
   margin: 10px;
@@ -361,4 +362,84 @@ img[src*="variant"] {
 
 .nav-2 {
   grid-template-rows: repeat(3, 1fr);
+}
+
+/* Media queries. */
+
+@media screen and (max-width: 1300px) {
+  .card {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    height: 100%;
+    grid-template-rows: 1fr 8fr;
+  }
+
+  .sidebar-header {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-header h3 {
+    display: none;
+  }
+
+  .sidebar-header img {
+    place-self: center;
+  }
+
+  li {
+    grid-template-columns: 1fr;
+  }
+
+  li img {
+    place-self: center;
+  }
+
+  li h4 {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .header {
+    grid-template-rows: 1fr;
+  }
+
+  .header-top {
+    padding: 1rem;
+    column-gap: 5px;
+  }
+
+  .main > div {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .card {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main div {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .main {
+    padding-right: 0;
+  }
+  .col-2 {
+    display: none;
+  }
 }
