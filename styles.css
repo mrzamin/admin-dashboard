@@ -30,6 +30,8 @@
 
 .header {
   background-color: var(--header-color);
+  grid-row: 1 span 1;
+  grid-column: 2/3;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
@@ -118,6 +120,8 @@ button {
 /*Main section. */
 /*Container for main grid. */
 .main {
+  grid-row-start: 2;
+  grid-column-start: 2;
   background-color: var(--main-color);
   display: grid;
   place-items: center;
@@ -309,6 +313,7 @@ img[src*="variant"] {
 .sidebar {
   background-color: var(--sidebar-color);
   grid-row: 1/-1;
+  grid-column: 1 span 1;
   color: white;
 }
 
